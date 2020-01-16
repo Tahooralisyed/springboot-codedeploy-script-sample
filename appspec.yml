@@ -2,10 +2,10 @@ version: 0.0
 os: linux
 
 files:
-- source: /
-  destination: /home/ec2-user
-  #- source: hello-0.0.1-SNAPSHOT.jar
-  #  destination: /home/ec2-user/springboot-codedeploy-script-sample/target
+- source: hello-0.0.1-SNAPSHOT.jar
+  destination: /home/ec2-user/springboot-codedeploy-script-sample/target
+  #- source: /
+#  destination: /home/ec2-user
 
 #permissions:
 #  - object: /
