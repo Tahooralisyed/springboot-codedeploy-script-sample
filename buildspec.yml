@@ -6,10 +6,9 @@ env:
 
 phases:
     install:
-        commands:
-        - echo installing maven...
-        - yum update -y
-        - yum install -y maven
+        install:
+            runtime-versions:
+                java: corretto11
     pre_build:
         commands:
             - echo "Entered the pre-build phases"
