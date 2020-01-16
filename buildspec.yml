@@ -5,6 +5,11 @@ env:
     JAVA_HOME: "/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.amzn2.0.1.x86_64"
 
 phases:
+    install:
+        commands:
+        - echo installing maven...
+        - yum update -y
+        - yum install -y maven
     pre_build:
         commands:
             - echo "Entered the pre-build phases"
