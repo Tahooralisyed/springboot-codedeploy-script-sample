@@ -1,4 +1,2 @@
-#!/usr/bin/env bash
-
-sudo killall java
-exit 0
+#!/bin/bash
+pkill -f 'java -jar'
